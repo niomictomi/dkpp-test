@@ -45,4 +45,4 @@ docker compose up --build -d
 
 
 Akses url  via browser
-```shhttp://localhost:8888```
+```http://localhost:8888```
