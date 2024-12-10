@@ -27,6 +27,10 @@ composer install
 
 php artisan key:generate  #buat generate APP_KEY
 
+npm install
+
+npm run build
+
 cd /database
 
 mv database.sqlite.backup database.sqlite
