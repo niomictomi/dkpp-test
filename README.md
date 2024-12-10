@@ -27,6 +27,10 @@ composer install
 
 php artisan key:generate  #buat generate APP_KEY
 
+cd /database
+
+mv database.sqlite.backup database.sqlite
+
 docker compose up --build -d
 ```
 
