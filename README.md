@@ -15,4 +15,5 @@ docker compose up -d
 ```
 
 
-Alses url "http://localhost:80"
+Akses url  via browser
+```shhttp://localhost:8888```
