@@ -30,11 +30,18 @@ php artisan key:generate  #buat generate APP_KEY
 npm install
 
 npm run build
+```
+
+## SETUP DATABASE
+```sh
 
 cd /database
 
 mv database.sqlite.backup database.sqlite
+```
 
+## BUILD ULANG
+```sh
 docker compose up --build -d
 ```
 
