@@ -12,7 +12,11 @@ git clone https://github.com/niomictomi/dkpp-test.git
 cp .env.example .env
 
 docker compose up --build -d
+```
 
+## MASUK CONTAINER
+
+```sh
 docker ps
 
 #cek ID container dkpp-app
