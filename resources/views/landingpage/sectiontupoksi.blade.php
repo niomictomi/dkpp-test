@@ -40,7 +40,7 @@
     <p class="text-gray-700 text-sm md:text-lg text-justify mb-4">
 
         Landasan konstitusional penasihat khusus presiden mengacu kepada perpres 137 tahun 2024 tentang penasihat khusus
-        presiden, utusan khusus presiden, staf khusus presiden, dan staf khusus wakil presiden
+        presiden, utusan khusus presiden, staf khusus presiden, dan staf khusus wakil presiden.
     </p>
 
 

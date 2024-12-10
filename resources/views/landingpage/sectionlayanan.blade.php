@@ -2,16 +2,22 @@
     <div class="bg-white p-6 rounded-2xl py-16 justify-center align-middle shadow-lg flex flex-col items-center">
         <img src="{{ asset('img/icon1.png') }}" class="w-36 h-48 object-cover" alt="icon1">
 
-        <h4 class="text-xl text-center font-bold mb-4">PELAKSANAAN FASILITASI</h4>
+        <h4 class="text-xl font-bold mb-4 text-center mt-2">
+            Rekomendasi Nasihat dan Pertimbangan Strategis Kebijakan Bidang Politik dan Keamanan,
+        </h4>
     </div>
     <div class="bg-white p-6 rounded-2xl py-16 justify-center align-middle shadow-lg flex flex-col items-center">
         <img src="{{ asset('img/icon2.png') }}" class="w-36 h-48 object-cover" alt="icon1">
 
-        <h4 class="text-xl font-bold mb-4">PEMBINAAN TEKNIS</h4>
+        <h4 class="text-xl font-bold mb-4 text-center mt-2">
+            Penyerapan Aspirasi Masyarakat terkait bidang Politik dan Keamanan,
+        </h4>
     </div>
     <div class="bg-white p-6 rounded-2xl py-16 justify-center align-middle shadow-lg flex flex-col items-center">
         <img src="{{ asset('img/icon3.png') }}" class="w-36 h-48 object-cover justify-center" alt="icon1">
 
-        <h4 class="text-xl font-bold mb-4">ADMINISTRASI &amp; SAPRAS</h4>
+        <h4 class="text-xl font-bold mb-4 text-center mt-2">
+            Kajian Politik dan Keamanan Nasional Indonesia, Koordinasi dan pemantapan Koordinasi PKP
+        </h4>
     </div>
 </div>
