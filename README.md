@@ -25,7 +25,7 @@ docker exec -it f6d60fcbf801 bash #f6d60fcbf801 ini punya saya
 
 php artisan key:generate  #buat generate APP_KEY
 
-docker compose -up --build -d
+docker compose up --build -d
 ```
 
 
