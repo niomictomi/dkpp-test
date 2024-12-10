@@ -15,11 +15,13 @@ docker compose up --build -d
 
 docker ps
 
-cek ID container dkpp-app
+#cek ID container dkpp-app
 
 docker exec -it f6d60fcbf801 bash #f6d60fcbf801 ini punya saya
-php artisan server
 
+php artisan key:generate  #buat generate APP_KEY
+
+docker compose -up --build -d
 ```
 
 
