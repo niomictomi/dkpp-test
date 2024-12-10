@@ -36,5 +36,13 @@ RUN composer dump-autoload --optimize
 # Set permission direktori storage dan bootstrap cache
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
+
+# SQLITE 
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
+
+RUN touch /var/www/database/database.sqlite && chmod 777 /var/www/database/database.sqlite
+
+
+
 # Expose port untuk PHP-FPM
 EXPOSE 9000
