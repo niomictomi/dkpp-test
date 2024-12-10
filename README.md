@@ -17,15 +17,13 @@ docker compose up --build -d
 ## MASUK CONTAINER
 
 ```sh
-docker ps
+docker ps                          #cek ID container dkpp-app
 
-#cek ID container dkpp-app
-
-docker exec -it f6d60fcbf801 bash #f6d60fcbf801 ini punya saya
+docker exec -it f6d60fcbf801 bash  #f6d60fcbf801 ini punya saya
 
 composer install
 
-php artisan key:generate  #buat generate APP_KEY
+php artisan key:generate           #buat generate APP_KEY
 
 npm install
 
