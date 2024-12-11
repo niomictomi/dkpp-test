@@ -2,12 +2,13 @@
     <div class="container px-4 md:px-16 flex flex-col md:flex-row justify-between items-center">
         <a href="/">
             <div class="flex flex-col md:flex-row items-center gap-4">
-                <img src="{{ asset('img/logo.png') }}" alt="Hero Image" class="w-20 h-20 object-cover rounded-full bg-white">
+                <img src="{{ asset('img/logo.png') }}" alt="Hero Image"
+                    class="w-20 h-20 object-cover rounded-full bg-white">
                 <h1 class="text-xl font-bold text-center md:text-start text-white">PENASIHAT KHUSUS PRESIDEN <br>BIDANG
                     POLITIK DAN KEAMANAN</h1>
             </div>
         </a>
-        <nav class="mt-4 md:mt-0 ml-auto flex text-white">
+        <nav class="mt-4 md:mt-0 ml-auto flex text-white flex-wrap">
             <a href="/#beranda" class="mx-2 p-3 w-24 text-sm rounded-lg text-center hover:bg-orange-400">Beranda</a>
 
             <!-- Dropdown Profil -->
@@ -25,7 +26,7 @@
                         Tugas dan
                         Fungsi</a>
 
-                    <a href="/#pejabat" class="block px-4 py-2 text-sm hover:bg-orange-400 hover:text-white">Pejabat</a>
+                    <a href="/#anggota" class="block px-4 py-2 text-sm hover:bg-orange-400 hover:text-white">Pejabat</a>
                 </div>
             </div>
 

@@ -10,7 +10,7 @@
         menunjukkan kemampuan untuk menjalankan pemilu secara damai dan konsisten, menjadi salah satu negara demokrasi
         terbesar di dunia. Namun, demokrasi yang berkembang juga menghadapi ancaman baru, seperti:
     </p>
-    <ul class="w-full space-y-1 text-sm md:text-lg text-gray-700 list-disc list-inside dark:text-gray-400 mb-6">
+    <ul class="w-full space-y-1 text-sm md:text-lg text-gray-700 list-disc list-inside mb-6">
 
         <li>
             Polarisasi sosial akibat perbedaan politik yang tajam.
@@ -42,7 +42,7 @@
 
         Dalam aspek keamanan, Indonesia menghadapi berbagai tantangan yang memengaruhi stabilitas nasional, antara lain:
     </p>
-    <ul class="w-full space-y-1 text-sm md:text-lg text-gray-700 list-disc list-inside dark:text-gray-400 mb-6">
+    <ul class="w-full space-y-1 text-sm md:text-lg text-gray-700 list-disc list-inside mb-6">
 
         <li>
             Potensi konflik di wilayah perbatasan dan kawasan strategis seperti Laut China Selatan.

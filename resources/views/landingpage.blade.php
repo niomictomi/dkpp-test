@@ -22,6 +22,10 @@
             @include('landingpage.sectiontupoksi')
 
 
+            @include('landingpage.landingpejabat')
+
+
         </div>
     </div>
+    
 @endsection

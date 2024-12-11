@@ -14,6 +14,16 @@
         html {
             scroll-behavior: smooth;
         }
+
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            /* Mulai dengan tombol disembunyikan */
+            z-index: 1000;
+            /* Agar tombol berada di atas elemen lain */
+        }
     </style>
 </head>
 
@@ -22,9 +32,19 @@
     <!-- Header -->
     @include('landingpage.sectionheader')
 
-        <!-- Card Section -->
-        @yield('content')
+    <!-- Card Section -->
+    @yield('content')
 
+
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTopBtn" title="Go to top"
+        class="fixed bottom-5 z-20 right-5 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-2 rounded-full shadow-lg hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-10">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+    </button>
     <!-- Footer -->
     <footer class="bg-blue-950 text-white py-6 w-full px-4">
         <div class="container  md:mx-16 flex flex-wrap justify-between items-center mb-4">
@@ -54,16 +74,30 @@
     </footer>
 
 
-    <!-- Tombol Scroll to Top -->
-    <button id="scrollToTopBtn" title="Go to top"
-        class="fixed bottom-5 right-5 bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-2 rounded-full shadow-lg hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-10">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        </svg>
 
-    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Mengatur visibilitas tombol saat scroll
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.remove("hidden"); // Menampilkan tombol
+                } else {
+                    scrollToTopBtn.classList.add("hidden"); // Menyembunyikan tombol
+                }
+            });
+
+            // Klik tombol untuk scroll ke atas
+            scrollToTopBtn.addEventListener("click", function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Scroll dengan efek halus
+                });
+            });
+        });
+    </script>
 
 
     <script>
@@ -100,27 +134,6 @@
     </script>
     <script src="{{ asset('js/app.js') }}"></script>
 
-    <script>
-        // Ambil tombol
-        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-        // Tampilkan tombol saat scroll lebih dari 300px
-        window.onscroll = () => {
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollToTopBtn.classList.remove("hidden");
-            } else {
-                scrollToTopBtn.classList.add("hidden");
-            }
-        };
-
-        // Scroll ke atas saat tombol diklik
-        scrollToTopBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
 
 
 
