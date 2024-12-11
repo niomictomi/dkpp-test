@@ -26,7 +26,7 @@
                         Tugas dan
                         Fungsi</a>
 
-                    <a href="/#anggota" class="block px-4 py-2 text-sm hover:bg-orange-400 hover:text-white">Pejabat</a>
+                    <a href="/#anggota" class="block px-4 py-2 text-sm hover:bg-orange-400 hover:text-white">Anggota</a>
                 </div>
             </div>
 
